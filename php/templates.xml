@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="php" deleted="false" description="class statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.class" name="class">/**
+ * ${desciption}.
+ *
+ * @author Saša Stamenković &lt;umpirsky@gmail.com&gt;
+ */
+class ${name} {
+    /**
+     * ${name} constructor.
+     */
+    public function __construct() {
+        ${cursor};
+    }
+}</template><template autoinsert="true" context="php" deleted="false" description="Class constant" enabled="true" name="const">/**&#13;
+ * ${desc}&#13;
+ */&#13;
+const ${name} = ${value};</template><template autoinsert="true" context="php" deleted="false" description="define statement" enabled="true" name="define">/**&#13;
+ * ${description}.&#13;
+ */&#13;
+define('${name}', ${value});${cursor}</template><template autoinsert="false" context="php" deleted="false" description="else statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.else" name="else">else {
+    ${cursor};
+}
+</template><template autoinsert="false" context="php" deleted="false" description="elseif statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.elif" name="elseif">elseif (${condition}) {
+    ${cursor};
+}
+</template><template autoinsert="false" context="php" deleted="false" description="for statement" enabled="true" name="for">for (${dollar}${index} = 0; ${dollar}${index} &lt; ${number_variable}; ${dollar}${index}++) {
+    ${line_selection}${cursor}
+}</template><template autoinsert="true" context="php" deleted="false" description="foreach statement" enabled="true" name="foreach">foreach (${dollar}${array_variable} as ${dollar}${variable}) {
+    ${cursor};
+}</template><template autoinsert="false" context="php" deleted="false" description="foreach with key statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.foreachkey" name="foreachkey">foreach (${dollar}${array_variable} as ${dollar}${number_variable} =&gt; ${dollar}${variable}) {
+    ${cursor};
+}
+</template><template autoinsert="true" context="php" deleted="false" description="if statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.if" name="if">if (${condition}) {
+    ${cursor};
+}</template><template autoinsert="true" context="php" deleted="false" description="if-else statement" enabled="true" name="if-else">if (${condition}) {&#13;
+    ${cursor};&#13;
+} else {&#13;
+}</template><template autoinsert="false" context="php" deleted="false" description="instanceof statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.instanceof" name="instanceof">if (${dollar}${variable} instanceof ${class}) {
+    ${cursor};
+}
+</template><template autoinsert="true" context="php" deleted="false" description="interface statement" enabled="true" name="interface">/**
+ * ${desciption}.
+ *
+ * @author Saša Stamenković &lt;umpirsky@gmail.com&gt;
+ */
+interface ${name} {
+    /**
+     * ${desc}.
+     */
+    public function ${method}();
+}</template><template autoinsert="true" context="php" deleted="false" description="methodstatement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.function" name="method">/**
+ * ${methodDescription}.
+ *
+ * @param ${type1} $$${variable1} ${description1}
+ * @param ${type2} $$${variable2} ${description2}
+ * @return ${returnType} ${returnDescription}
+ */
+${public} function ${f}($$${variable1}, $$${variable2}) {
+    ${cursor};
+}
+</template><template autoinsert="true" context="php" deleted="false" description="switch statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.switch" name="switch-case">switch (${dollar}${variable}) {
+    case ${value}:
+        ${cursor};
+    break;
+    
+    default:
+        ;
+    break;
+}</template><template autoinsert="true" context="php" deleted="false" description="throw statement" enabled="true" name="throw">throw new Exception(${cursor});</template><template autoinsert="true" context="php" deleted="false" description="try-catch block" enabled="true" name="try-catch">try {&#13;
+    ;&#13;
+} catch (Exception $$e) {&#13;
+    ${handle};&#13;
+}</template><template autoinsert="true" context="php" deleted="false" description="Class member variable" enabled="true" name="var">/**
+ * ${var_description}.
+ *
+ * @var ${type}
+ */
+${mod} $$${name};</template><template autoinsert="true" context="php" deleted="false" description="Variable type hint" enabled="true" name="vardoc">/* @var $$${name} ${type} */</template><template autoinsert="false" context="php" deleted="false" description="while loop" enabled="true" id="org.eclipse.php.ui.editor.templates.php.while" name="while">while (${condition}) {
+    ${cursor};
+}
+</template></templates>
