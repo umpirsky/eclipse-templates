@@ -10,8 +10,8 @@ class ${name} {
     public function __construct() {
         ${cursor};
     }
-}</template><template autoinsert="true" context="php" deleted="false" description="Class constant" enabled="true" name="const">/**&#13;
- * ${desc}&#13;
+}</template><template autoinsert="true" context="php" deleted="false" description="class constant" enabled="true" name="const">/**&#13;
+ * ${description}&#13;
  */&#13;
 const ${name} = ${value};</template><template autoinsert="true" context="php" deleted="false" description="define statement" enabled="true" name="define">/**&#13;
  * ${description}.&#13;
@@ -22,11 +22,11 @@ define('${name}', ${value});${cursor}</template><template autoinsert="false" con
 </template><template autoinsert="false" context="php" deleted="false" description="elseif statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.elif" name="elseif">elseif (${condition}) {
     ${cursor};
 }
-</template><template autoinsert="false" context="php" deleted="false" description="for statement" enabled="true" name="for">for (${dollar}${index} = 0; ${dollar}${index} &lt; ${number_variable}; ${dollar}${index}++) {
+</template><template autoinsert="false" context="php" deleted="false" description="for loop" enabled="true" name="for">for (${dollar}${index} = 0; ${dollar}${index} &lt; ${count}; ${dollar}${index}++) {
     ${line_selection}${cursor}
-}</template><template autoinsert="true" context="php" deleted="false" description="foreach statement" enabled="true" name="foreach">foreach (${dollar}${array_variable} as ${dollar}${variable}) {
+}</template><template autoinsert="true" context="php" deleted="false" description="foreach loop" enabled="true" name="foreach">foreach (${dollar}${array} as ${dollar}${value}) {
     ${cursor};
-}</template><template autoinsert="false" context="php" deleted="false" description="foreach with key statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.foreachkey" name="foreachkey">foreach (${dollar}${array_variable} as ${dollar}${number_variable} =&gt; ${dollar}${variable}) {
+}</template><template autoinsert="false" context="php" deleted="false" description="foreach loop with key" enabled="true" id="org.eclipse.php.ui.editor.templates.php.foreachkey" name="foreachkey">foreach (${dollar}${array} as ${dollar}${key} =&gt; ${dollar}${value}) {
     ${cursor};
 }
 </template><template autoinsert="true" context="php" deleted="false" description="if statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.if" name="if">if (${condition}) {
@@ -69,12 +69,12 @@ ${public} function ${f}($$${variable1}, $$${variable2}) {
     ;&#13;
 } catch (Exception $$e) {&#13;
     ${handle};&#13;
-}</template><template autoinsert="true" context="php" deleted="false" description="Class member variable" enabled="true" name="var">/**
- * ${var_description}.
+}</template><template autoinsert="true" context="php" deleted="false" description="c	lass member variable" enabled="true" name="var">/**
+ * ${description}.
  *
  * @var ${type}
  */
-${mod} $$${name};</template><template autoinsert="true" context="php" deleted="false" description="Variable type hint" enabled="true" name="vardoc">/* @var $$${name} ${type} */</template><template autoinsert="false" context="php" deleted="false" description="while loop" enabled="true" id="org.eclipse.php.ui.editor.templates.php.while" name="while">while (${condition}) {
+${mod} $$${name};</template><template autoinsert="true" context="php" deleted="false" description="variable type hint" enabled="true" name="vardoc">/* @var $$${name} ${type} */</template><template autoinsert="false" context="php" deleted="false" description="while loop" enabled="true" id="org.eclipse.php.ui.editor.templates.php.while" name="while">while (${condition}) {
     ${cursor};
 }
 </template></templates>
