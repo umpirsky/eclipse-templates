@@ -40,7 +40,7 @@ define('${name}', ${value});${cursor}</template><template autoinsert="false" con
 </template><template autoinsert="true" context="php" deleted="false" description="interface statement" enabled="true" name="interface">/**
  * ${desciption}.
  *
- * @author Saša Stamenković &lt;umpirsky@gmail.com&gt;
+ * @author ${user}
  */
 interface ${name} {
     /**
