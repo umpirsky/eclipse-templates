@@ -3,11 +3,13 @@
  *
  * @author ${user}
  */
-class ${name} {
+class ${name}
+{
     /**
      * ${name} constructor.
      */
-    public function __construct() {
+    public function __construct()
+    {
         ${cursor};
     }
 }</template><template autoinsert="true" context="php" deleted="false" description="class constant" enabled="true" name="const">/**&#13;
@@ -42,7 +44,8 @@ define('${name}', ${value});${cursor}</template><template autoinsert="false" con
  *
  * @author ${user}
  */
-interface ${name} {
+interface ${name}
+{
     /**
      * ${desc}.
      */
@@ -55,7 +58,8 @@ interface ${name} {
  *
  * @return ${returnType} ${returnDescription}
  */
-${public} function ${f}($$${variable1}, $$${variable2}) {
+${public} function ${f}($$${variable1}, $$${variable2})
+{
     ${cursor};
 }
 </template><template autoinsert="true" context="php" deleted="false" description="switch statement" enabled="true" id="org.eclipse.php.ui.editor.templates.php.switch" name="switch-case">switch (${dollar}${variable}) {
